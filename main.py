@@ -17,7 +17,7 @@ url = "https://api.bybit.com/v2/public/tickers?symbol=BTCUSDT"
 # Создаем бота Telegram
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
 
-# Ваша функция для получения последней цены биткоина
+# Функция для получения последней цены биткоина
 def get_btc_price():
     try:
         response = requests.get(url)
